@@ -5,13 +5,13 @@ const storereducer = (state,actions) =>{
         return {counter: state.counter + 1}
     }
     if(actions.type === "DECREMENT"){
-        return {counter: state.couter - 1}
+        return {counter: state.counter - 1}
     }
-    if(actions.type === "INCREMENTBY2"){
-        return {counter: state.couter + 2}
+    if(actions.type === "INCREMENTBY5"){
+        return {counter: state.counter + 5}
     }
-    if(actions.type === "DECREMENTBY2"){
-        return {counter: state.couter - 2}
+    if(actions.type === "DECREMENTBY5"){
+        return {counter: state.counter - 5}
     }
     return {counter:0}
 }
